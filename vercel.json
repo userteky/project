@@ -3,14 +3,14 @@
   "name": "project",
   "builds": [
     {
-      "src": "app.py",
-      "use": "@vercel/python"
+      "src": "build.sh",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.py"
+      "dest": "app/__init__.py"
     }
   ],
   "env": {
