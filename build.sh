@@ -1,8 +1,3 @@
-#!/bin/bash
-
-# Install dependencies
+# build_files.sh
 pip install -r requirements.txt
-
-# Build your project here
-# For example, you can run a Python script to generate static files
-python app/__init__.py
+python3.9 manage.py collectstatic
